@@ -1,0 +1,17 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+        bind:
+
+    KimaiPlugin\SmallBusinessExtraTaxBundle\:
+        resource: '../../*'
+        exclude: '../../{Resources}'
+
+    KimaiPlugin\SmallBusinessExtraTaxBundle\Form\Extension\InvoiceTemplateFormExtension:
+        tags: ['form.type_extension']
+
+    KimaiPlugin\SmallBusinessExtraTaxBundle\Invoice\Calculator\SmallBusinessCalculator:
+        autoconfigure: false
+        autowire: false

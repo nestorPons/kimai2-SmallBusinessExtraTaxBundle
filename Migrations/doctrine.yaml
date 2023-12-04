@@ -1,0 +1,13 @@
+# --------------------------------------------------------------------------------------------------
+# Generate a new migration with:
+# bin/console doctrine:migrations:diff --em=default --configuration=var/plugins/SmallBusinessExtraTaxBundle/Migrations/doctrine.yaml
+#
+# Execute all migrations with:
+# bin/console kimai:bundle:tasks:install
+# bin/console doctrine:migrations:migrate --em=default --configuration=var/plugins/SmallBusinessExtraTaxBundle/Migrations/doctrine.yaml
+# --------------------------------------------------------------------------------------------------
+
+migrations_paths:
+    'KimaiPlugin\SmallBusinessExtraTaxBundle\Migrations': 'var/plugins/SmallBusinessExtraTaxBundle/Migrations'
+
+
